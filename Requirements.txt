@@ -1,0 +1,16 @@
+fastapi
+sqlalchemy
+email-validator
+sqlalchemy-utils
+pydantic
+uvicorn
+psycopg2
+PyJWT
+python-decouple
+Env-file
+python-jose
+passlib
+pymongo
+pytest
+httpx
+faker
