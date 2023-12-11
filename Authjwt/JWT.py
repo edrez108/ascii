@@ -45,3 +45,12 @@ async def decode_jwt(token: str):
         return decode_token['phone_number'] if decode_token['expiry'] >= time.time() else None
     except:
         return None
+
+
+
+# git init
+# git add --all (or some other files)
+# git commit -m "comment for this commit "
+# git branch -M main(branch name )
+# git remote add origin(remote name) https://github.com/edrez108/Telegram-test.git
+# git push -u origin main
