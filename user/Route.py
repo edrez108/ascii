@@ -467,4 +467,9 @@ async def get_info(token: dict, cg_id: dict, collection: get_mongo_database = De
         return JSONResponse(status_code=status.HTTP_200_OK, content=info)
 
 
-
+# git init
+# git add --all (or some other files)
+# git commit -m "comment for this commit "
+# git branch -M main(branch name )
+# git remote add origin(remote name) https://github.com/edrez108/Telegram-test.git
+# git push -u origin main
