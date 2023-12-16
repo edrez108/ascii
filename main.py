@@ -18,3 +18,9 @@ app.add_middleware(
 Base.metadata.create_all(bind=engine)
 app.include_router(user_router)
 app.include_router(Message_route)
+
+# git init for starting git
+# git add --all(or name of specefic file
+# git commit -m "comment for commited files
+# git branch -M main(branch name)
+# git remote add origin(remotename)

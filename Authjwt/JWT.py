@@ -5,6 +5,8 @@ import time
 import jwt
 from decouple import config
 from jose import JWTError
+
+
 from passlib.context import CryptContext
 
 JWT_SECRET = config("secret")
@@ -26,7 +28,7 @@ async def token_response(token: str):
         "access_token": token
     }
 
-
+# salam khodeto in modele for your in my heart
 async def sign_jwt(phone_number: str):
     try:
         payload = {
