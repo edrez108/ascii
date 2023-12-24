@@ -16,7 +16,8 @@ from Authjwt import JWT
 from enum import Enum
 from message.Models import SendMessage_CG
 import datetime
-from Database import get_mongo_db, get_mongo_database, collection_dict, init_collection, client
+from Database import get_mongo_db, get_mongo_database, collection_dict
+# init_collection, client
 from message.Schema import message_serializer, messages_serializer, cgs_serializer
 
 ## 111111111111111111111111111111111111111111111
