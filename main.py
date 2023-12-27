@@ -25,7 +25,3 @@ app.include_router(Message_route)
 # git branch -M main(branch name)
 # git remote add origin(remotename)
 # git edited
-# git for your main reason
-# git in this mainsd
-#adnamdsoasndoasdn
-# adsnkasdasdjlnalsdxqdsads;
