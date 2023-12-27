@@ -224,7 +224,7 @@ else:
 
 local_session = sessionmaker(bind=engine, autoflush=False, autocommit=False)
 Base = declarative_base()
-client = MongoClient(MONGODB_DATABASE_URL)
+# client = MongoClient(MONGODB_DATABASE_URL)
 
 
 def get_database():
@@ -233,38 +233,41 @@ def get_database():
         yield db
     finally:
         db.close()
-
+#
 
 def get_mongo_db(db_name):
-
-    if db_name in client.list_database_names():
-        print("database already created !!")
-        return client[f"{db_name}"]
-    print("creating database .........")
-    return client[f"{db_name}"]
-
-
+	pass
+#
+#	    if db_name in client.list_database_names():
+#	        print("database already created !!")
+#	        return client[f"{db_name}"]
+#	    print("creating database .........")
+#	    return client[f"{db_name}"]
+#
+#
 def get_mongo_database():
-    coll = client["TelegramMessage"]
-    yield coll
-
-
+	pass
+#	    coll = client["TelegramMessage"]
+#	    yield coll
+#
+#
 def init_collection(database):
-    coll_names = database.list_collection_names()
+	pass
+#	    coll_names = database.list_collection_names()
+#
+#	    for coll_name in collection_dict:
+#	        if collection_dict[coll_name] not in coll_names:
+#	            new_coll = database[f"{collection_dict[coll_name]}"]
+#	            new_coll.insert_one(dict(types[collection_dict[coll_name]]))
+#	            print(f"      Creating => {collection_dict[coll_name]} and Initialized")
+#	        else:
+##	            print(f"     {collection_dict[coll_name]} is exist ")
+#	            if database[f"{collection_dict[coll_name]}"].find_one() is None:
+#	                database[f"{collection_dict[coll_name]}"].insert_one(dict(types[collection_dict[coll_name]]))
+##	                print(f"      Collection Exist => {collection_dict[coll_name]} so Initialized")
+#	            else:
+#	                print(f"     {collection_dict[coll_name]} Already Initialized")
+#
 
-    for coll_name in collection_dict:
-        if collection_dict[coll_name] not in coll_names:
-            new_coll = database[f"{collection_dict[coll_name]}"]
-            new_coll.insert_one(dict(types[collection_dict[coll_name]]))
-            print(f"      Creating => {collection_dict[coll_name]} and Initialized")
-        else:
-            print(f"     {collection_dict[coll_name]} is exist ")
-            if database[f"{collection_dict[coll_name]}"].find_one() is None:
-                database[f"{collection_dict[coll_name]}"].insert_one(dict(types[collection_dict[coll_name]]))
-                print(f"      Collection Exist => {collection_dict[coll_name]} so Initialized")
-            else:
-                print(f"     {collection_dict[coll_name]} Already Initialized")
-
-
-init_collection(client["TelegramMessage"])
+# init_collection(client["TelegramMessage"])
 
