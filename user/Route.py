@@ -36,7 +36,7 @@ class Status(Enum):
 
 @router.get("/")
 async def root():
-    return {"message": "fetching rooots"}
+    return {"message": "fetching aoansdoasdnaosdjnasodjnasojdna"}
 
 
 

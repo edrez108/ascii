@@ -5,6 +5,8 @@ from message.Route import Route as Message_route
 from fastapi.middleware.cors import CORSMiddleware
 Origins = ["https://www.google.com"]
 
+import multiprocessing
+print(multiprocessing.cpu_count())
 
 
 app = FastAPI(title="FastAPI Telegram", version="0.0.1")
